@@ -2,6 +2,9 @@
 
 Este é um projeto de catálogo de filmes desenvolvido com foco em design moderno e componentes reutilizáveis utilizando React, styled-components e outras bibliotecas modernas.
 
+## Layout
+Este layout foi desenvolvido usando como base esse -> [Figma da rocktseat](https://www.figma.com/design/PwntzoOdthJsbwwhhHH6bm/Gerenciador-de-Filmes--Community-?node-id=3-376&p=f&t=jmHZXYMHrttjBkwB-0)
+
 ## 🚀 Funcionalidades
 
 ### 🛡️ Autenticação
