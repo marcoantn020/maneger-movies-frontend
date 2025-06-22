@@ -2,48 +2,106 @@
 
 Este é um projeto de catálogo de filmes desenvolvido com foco em design moderno e componentes reutilizáveis utilizando React, styled-components e outras bibliotecas modernas.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
-- Autenticação de usuário (Login e Cadastro)
-- Upload de imagem via URL e arquivo
-- Exibição de detalhes do filme
-- Layouts personalizados com `styled-components`
-- Validações e feedback visual para inputs e textarea
-- Sistema de rotas com `react-router-dom`
-- Página de erro personalizada (NotFound)
-- Página de erro personalizada (NotFound)
+### 🛡️ Autenticação
+- Login com validação de campos
+- Cadastro de novos usuários
+- Persistência de sessão
+- Proteção de rotas privadas
 
-## Tecnologias Utilizadas
+### 🎥 Gerenciamento de Filmes
+- Cadastro com upload de imagem (URL ou arquivo)
+- Edição de informações
+- Exclusão com confirmação modal
+- Listagem paginada
+- Busca por título
 
-- React
-- styled-components
-- React Router DOM
-- Icones via `phosphor-react`
-- TypeScript 
+### 🎨 UI/UX
+- Componentes reutilizáveis
+- Feedback visual para todas ações
+- Validações em tempo real
+- Design responsivo
+- Animações e transições
 
-## Scripts
+## 🛠️ Tecnologias Utilizadas
 
-- `npm install` para instalar as dependências
-- `npm run dev` para iniciar o projeto em ambiente de desenvolvimento
+| Tecnologia          | Uso no Projeto                          |
+|---------------------|-----------------------------------------|
+| React               | Biblioteca principal                    |
+| TypeScript          | Tipagem estática                        |
+| Redux               | Gerenciamento de estado global          |
+| styled-components   | Estilização CSS-in-JS                   |
+| react-router-dom    | Navegação entre páginas                 |
+| phosphor-react      | Ícones                                  |
+| Axios               | Requisições HTTP                        |
+| Vite                | Build e desenvolvimento                 |
 
-## Estrutura de Pastas
-
+## 📂 Estrutura de Pastas Detalhada
 ```
 src/
 ├── @types/             # Tipagens styled-components
 ├── assets/             # Imagens e ícones
 ├── components/         # Componentes reutilizáveis (Botões, Cards, Inputs, etc.)
+├── hooks/              # logica centralizada codigo mais limpo
 ├── layouts/            # Componentes layout default
 ├── pages/              # Páginas principais (Login, Cadastro, Detalhes, etc.)
+├── service/            # conexão com api e request
+├── store/              # arquivos do redux
 ├── styles/             # Estilos globais
 ├── Router/             # Arquivo de rotas
 └── App.tsx             # Componente principal
 ```
 
-## Página NotFound
+## 🧩 Componentes Principais
 
-Caso a rota não seja encontrada, o usuário será redirecionado para uma página de erro com design amigável.
+### `Input.tsx`
+- Validação em tempo real
+- Ícones personalizáveis
+- Tratamento de erros
+- Suporte a máscaras (telefone, etc)
+
+### `MovieCard.tsx`
+- Exibição responsiva
+- Hover effects
+- Integração com API de filmes
+
+### `DeleteConfirmationModal.tsx`
+- Modal acessível
+- Animações de entrada/saída
+- Confirmação em 2 passos
+
+## 🚧 Página NotFound
+- Design amigável
+- Botão de retorno
+- Ilustração personalizada
+- Código de erro 404
+
+## 🔧 Scripts
+## Scripts
+
+- `` para
+- `npm install` para instalar as dependências
+- `npm run dev` para iniciar o projeto em ambiente de desenvolvimento
+
+
+| Comando                 | Descrição                          |
+|-------------------------|------------------------------------|
+| `cp .env.example .env`  | Acessar api externa TMDB           |
+| `npm install`           | Instala todas dependências         |
+| `npm run dev`           | Inicia servidor de desenvolvimento |
+| `npm run build`         | Gera versão para produção          |
+| `npm run lint`          | Análise estática de código         |
+
+## 🌈 Design System
+- Cores centralizadas no `theme.ts`
+- Tipografia consistente
+- Espaçamento modular (8px base)
+- Breakpoints responsivos:
+    - Mobile: até 400px
+    - Tablet: 768px
+    - Desktop: 1024px
 
 ---
 
-Desenvolvido com 💜
+Desenvolvido por Marco Antonio
