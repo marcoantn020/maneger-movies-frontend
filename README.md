@@ -78,20 +78,10 @@ src/
 - Código de erro 404
 
 ## 🔧 Scripts
-## Scripts
-
-- `` para
-- `npm install` para instalar as dependências
-- `npm run dev` para iniciar o projeto em ambiente de desenvolvimento
-
-
-| Comando                 | Descrição                          |
-|-------------------------|------------------------------------|
-| `cp .env.example .env`  | Acessar api externa TMDB           |
-| `npm install`           | Instala todas dependências         |
-| `npm run dev`           | Inicia servidor de desenvolvimento |
-| `npm run build`         | Gera versão para produção          |
-| `npm run lint`          | Análise estática de código         |
+Executar projeto
+```bash
+  docker-compose up -d
+```
 
 ## 🌈 Design System
 - Cores centralizadas no `theme.ts`

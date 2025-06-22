@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  frontend:
+    image: node:20
+    container_name: movie-frontend
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "5173:5173"
+    environment:
+      HOST: 0.0.0.0
+      CHOKIDAR_USEPOLLING: "true"
+    command: sh -c "cp .env.example .env && npm ci && npm run dev -- --host"
+    # opcional, se quiser rodar como seu UID (ex: 1000):
+    # user: "${UID:-1000}:${GID:-1000}"
+    networks:
+      - movie-network
+
+networks:
+  movie-network:
+    driver: bridge
+
+volumes:
+  node_modules:
