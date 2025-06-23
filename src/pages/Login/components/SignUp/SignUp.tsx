@@ -43,7 +43,7 @@ export function SignUp() {
         }
 
         const success= await signup(formData);
-        if (success) navigate('/')
+        if (success) navigate('/adm')
     };
 
     const getError = (field: string) => {

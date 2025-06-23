@@ -85,6 +85,7 @@ Executar projeto
 ```bash
   docker-compose up -d
 ```
+[url da aplicação](http://localhost:5173)
 
 ## 🌈 Design System
 - Cores centralizadas no `theme.ts`
